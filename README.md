@@ -27,10 +27,6 @@ echo $template->render('view', ['data' => 'value']);
 
 Read more about the blade template engine [here](https://laravel.com/docs/10.x/blade).
 
-### To switch between different views
-
-You can use `f` request parameter to switch between different views. For example, if you have a view called `home.blade.php` and you want to switch to `about.blade.php`, you can do so by adding `?f=about` to the url.
-
 ### To compile blade templates
 
 You can use the `compile` method to compile blade templates. For example, if you have a blade template called `home.blade.php` and you want to compile it, you can do so by calling the `compile` method.
@@ -42,9 +38,6 @@ $template->compile();
 ### Example
 
 ```php
-include 'vendor/autoload.php';
-
-<?php
 require_once "vendor/autoload.php";
 
 use Binjuhor\Blade\BladeTemplate as Blade;
@@ -66,7 +59,7 @@ echo $blade->render($page);
 $blade->compiles();
 ```
 
-### Project directory structure
+### Sample project directory structure
 
 ```
 ./index.php
@@ -89,7 +82,7 @@ $blade->compiles();
 
 ```
 
-Check out the [example](example) directory for a complete example.
+Check out the [example](https://github.com/binjuhor/html-generator) directory for a complete example.
 
 ## License
 
