@@ -78,6 +78,7 @@ class BladeTemplate
 
 		$response = $client->request('GET', $fullUrl);
 		$html = $response->getBody();
+        $html = str_replace('="resources/assets/', '="assets/', $html);
 		$this->files->put($this->compileDir.'/'.$page . '.html', $html);
 		return true;
 	}
