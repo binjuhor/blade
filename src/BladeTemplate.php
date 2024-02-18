@@ -44,8 +44,8 @@ class BladeTemplate
 		$this->files = new Filesystem;
 		$this->engineResolver = new EngineResolver;
 
-		$this->finder = new FileViewFinder($this->files, [__DIR__ . $view]);
-		$this->compiler = new BladeCompiler($this->files, __DIR__ . $cache);
+		$this->finder = new FileViewFinder($this->files, [$view]);
+		$this->compiler = new BladeCompiler($this->files,  $cache);
 
 		$this->engineResolver->register('blade', function () {
 			return new CompilerEngine($this->compiler);
