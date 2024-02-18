@@ -54,7 +54,7 @@ class BladeTemplate
 		$this->factory = new Factory($this->engineResolver, $this->finder, $this->dispatcher);
 	}
 
-	public function view($view, $data = [])
+	public function render($view, $data = [])
 	{
 		return $this->factory->make($view, $data)->render();
 	}
