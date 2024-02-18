@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "illuminate/view": "^10.44",
-        "symfony/var-dumper": "^7.0"
+        "symfony/var-dumper": "^7.0",
+        "guzzlehttp/guzzle": "^7.0"
     },
     "license": "MIT",
     "autoload": {
