@@ -1,0 +1,21 @@
+{
+    "name": "binjuhor/blade",
+    "description": "Laravel blade standalone for generate HTML CSS JS page",
+    "type": "library",
+    "require": {
+        "illuminate/view": "^10.44",
+        "symfony/var-dumper": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Binjuhor\\Blade\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hoang Kiem",
+            "email": "kiemhd@outlook.com"
+        }
+    ]
+}
